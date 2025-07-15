@@ -1,0 +1,5 @@
+{
+  "name": "Calculadora de kVA para Generador",
+  "description": "Una calculadora dinámica para ayudar a los usuarios a determinar los kVA necesarios para su generador eléctrico basándose en las herramientas que necesitan operar simultáneamente. El usuario puede añadir múltiples herramientas, especificar su potencia, factor de arranque y factor de potencia para obtener un cálculo preciso del total de kVA requeridos.",
+  "requestFramePermissions": []
+}
