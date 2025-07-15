@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 interface TotalKvaDisplayProps {
@@ -9,8 +8,8 @@ export const TotalKvaDisplay: React.FC<TotalKvaDisplayProps> = ({ totalKva }) =>
     const recommendedKva = Math.ceil(totalKva);
 
     return (
-        <div className="fixed bottom-0 left-0 right-0 w-full bg-gradient-to-t from-slate-900 to-slate-800 p-5 shadow-[0_-10px_20px_-10px_rgba(0,0,0,0.2)] text-white z-50">
-            <div className="mx-auto max-w-5xl flex flex-col items-center justify-between gap-4 sm:flex-row">
+        <div className="w-full bg-slate-800 p-5 shadow-lg text-white rounded-xl">
+            <div className="flex flex-col items-center justify-between gap-4 sm:flex-row">
                 <div className="text-center sm:text-left">
                     <h2 className="text-xl font-bold tracking-tight sm:text-2xl">
                         Total kVA Requerido

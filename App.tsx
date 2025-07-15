@@ -59,7 +59,7 @@ const App: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-slate-100 font-sans">
-            <main className="mx-auto max-w-5xl p-4 pb-48 sm:p-6 lg:p-8">
+            <main className="mx-auto max-w-5xl p-4 sm:p-6 lg:p-8">
                 <header className="mb-10 text-center">
                     <h1 className="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
                         Calculadora de kVA para Generador
@@ -90,9 +90,13 @@ const App: React.FC = () => {
                         Añadir Herramienta
                     </button>
                 </div>
+                
+                {tools.length > 0 && (
+                    <div className="mt-12">
+                         <TotalKvaDisplay totalKva={totalKva} />
+                    </div>
+                )}
             </main>
-            
-            {tools.length > 0 && <TotalKvaDisplay totalKva={totalKva} />}
         </div>
     );
 };
